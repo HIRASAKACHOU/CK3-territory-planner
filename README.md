@@ -1,1 +1,22 @@
-# CK3-territory-planner
+# CK3 Territory Planner · 省份领地规划器
+
+离线运行的省份与领地规划工具，支持 PNG 省份图、伯爵领／公爵领／王国分组、首府、地产类型和海峡连接。
+
+## 使用
+
+下载仓库后，用 Chrome 或 Edge 打开 `省份领地规划器.html`，无需安装依赖或启动服务器。该 HTML 可以单独复制使用。
+
+完整操作说明见 [使用说明](使用说明.md)。仓库提供示例省份 PNG 和示例工程 JSON。
+
+本工具用于规划，不直接修改游戏文件，也不自动生成 CK3 头衔脚本。
+
+## 开发
+
+`index.html` 为开发入口，依赖 `core.js` 和 `app.js`。
+
+```sh
+node core.test.js
+node build.js
+```
+
+第一条命令运行核心逻辑测试；第二条生成独立的 `省份领地规划器.html`。
